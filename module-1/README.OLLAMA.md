@@ -7,7 +7,7 @@ Follow all the general instructions for setup and then:
 ## llama3.1-tools
 
 llama3.1 has tooling but does not default to a normal answer if the tooling is not appropriate.
-To acheive a similar response to OpenAi we create llama3.1-tools
+To acheive a similar response to OpenAI we create llama3.1-tools
 
 1. Install Ollama
 2. `Ollama pull llama3.1` ( which has a tools interface )
@@ -25,7 +25,7 @@ See [here](./Modelfile)
 
 Use [this](https://github.com/langchain-ai/langgraph-studio/issues/112) to get ollama working inside the docker image.
 To get ollama working from within the Lang Studio which uses Docker we need to
-explicitly define the base url mapped to the external resource.
+explicitly define the base url mapped to the external resource. The code has been updated other use:
 
 ``` python
 llm = ChatOllama( model="llama3.1-tool", temperature=0,base_url="http://host.docker.internal:11434") # other params...)
