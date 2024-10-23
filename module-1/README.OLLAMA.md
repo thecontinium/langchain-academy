@@ -24,7 +24,7 @@ See the updated Modelfile [here](./Modelfile)
 
 ## Using Ollama With Lang Studio
 
-To get ollama working from See [within the Lang Studio](https://github.com/langchain-ai/langgraph-studio/issues/112) which uses Docker we need to explicitly define the base url mapped to the external resource. The code has been updated to use:
+To get ollama working from [within the Lang Studio](https://github.com/langchain-ai/langgraph-studio/issues/112) which uses Docker we need to explicitly define the base url mapped to the external resource. The code has been updated to use:
 
 ``` python
 llm = ChatOllama( model="llama3.1-tool", temperature=0,base_url="http://host.docker.internal:11434")
